@@ -8,7 +8,7 @@ class Mysqli extends \mysqli
     private function __construct() {
         global $config;
 
-		\extract($config['db']);
+        \extract($config['db']);
 
         parent::__construct($host, $user, $passwd, $dbname);
 
